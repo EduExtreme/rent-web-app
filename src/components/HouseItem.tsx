@@ -9,7 +9,7 @@ interface HouseItemProps {
 }
 export function HouseItem({ address, image }: HouseItemProps) {
   return (
-    <div className="flex flex-col h-[100%] w-[300px] cursor-pointer rounded-lg bg-white shadow-md">
+    <div className="flex flex-col h-[430px] w-[300px] cursor-pointer rounded-lg bg-white shadow-md">
       <Image
         src={image}
         width={0}
@@ -27,7 +27,7 @@ export function HouseItem({ address, image }: HouseItemProps) {
         </div>
       </div>
 
-      <div className="flex mt-4 border border-t-orange-500 gap-2 items-center">
+      <div className="flex mt-4 border border-t-orange-500 border-b-transparent h-full gap-2 items-center">
         <Image src={whatsLogo} alt="social icon" className="w-10 h-10 mx-2" />
         <div className="flex items-center gap-1 text-gray-700">
           <BedDoubleIcon size={24} />

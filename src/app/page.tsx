@@ -15,7 +15,10 @@ export default function Home() {
       </div>
       <HouseList>
         {points.map((point) => (
-          <HouseItem address={point.address} image={point.image} />
+          <>
+            <HouseItem address={point.address} image={point.image} />
+            <HouseItem address={point.address} image={point.image} />
+          </>
         ))}
       </HouseList>
     </main>
